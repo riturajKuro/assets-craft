@@ -43,7 +43,7 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
-        isScrolled ? "bg-black/90 backdrop-blur-md shadow-lg py-3" : "bg-transparent py-5",
+        isScrolled ? "bg-black/90 backdrop-blur-md shadow-lg py-2 md:py-3" : "bg-transparent py-3 md:py-5",
       )}
     >
       <div className="container mx-auto px-4">
@@ -55,10 +55,12 @@ export default function Header() {
                 <Image
                   src="/images/assets-craft-logo.png"
                   alt="Assets Craft Logo"
-                  width={120}
-                  height={120}
+                  width={80}
+                  height={80}
                   className={cn(
-                    isScrolled ? "w-24 h-24 md:w-28 md:h-28 hover:scale-105 transition-transform duration-300" : "w-28 h-28 md:w-32 md:h-32 hover:scale-105 transition-transform duration-300"
+                    isScrolled
+                      ? "w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 hover:scale-105 transition-transform duration-300"
+                      : "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 hover:scale-105 transition-transform duration-300"
                   )}
                 />
               </div>
@@ -70,7 +72,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav role="navigation" className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -116,7 +118,7 @@ export default function Header() {
             isMobileMenuOpen ? "max-h-64 opacity-100 mt-4" : "max-h-0 opacity-0",
           )}
         >
-          <nav className="flex flex-col space-y-4 py-4">
+          <nav role="navigation" className="flex flex-col space-y-4 py-4">
             {navItems.map((item) => (
               <Link
                 key={item.name}
