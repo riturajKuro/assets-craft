@@ -57,7 +57,7 @@ export default function LandingPage() {
         <Header />
 
         {/* Hero Section - Enhanced with Single Background Image */}
-        <section className="relative h-screen flex items-center overflow-hidden pt-28 md:pt-0">
+        <section className="relative h-screen flex items-center overflow-hidden pt-20 sm:pt-24 md:pt-0">
           {/* Single Hero Background Image with Animation */}
           <div className="absolute inset-0 z-0">
             <Image

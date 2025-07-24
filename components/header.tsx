@@ -55,12 +55,10 @@ export default function Header() {
                 <Image
                   src="/images/assets-craft-logo.png"
                   alt="Assets Craft Logo"
-                  width={80}
-                  height={80}
+                  width={48}
+                  height={48}
                   className={cn(
-                    isScrolled
-                      ? "w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 hover:scale-105 transition-transform duration-300"
-                      : "w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 hover:scale-105 transition-transform duration-300"
+                    "w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 hover:scale-105 transition-transform duration-300"
                   )}
                 />
               </div>
