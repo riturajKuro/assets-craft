@@ -21,7 +21,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://assetscraft.com",
+    url: "https://assetscraft.org",
     title: "Assets Craft Financial Solution | Best Financial Advisor in Kolkata",
     description:
       "Leading financial advisory firm in Kolkata offering expert investment planning, insurance solutions, loans, and tax services.",
@@ -46,7 +46,7 @@ export const metadata = {
     google: "your-google-verification-code",
   },
   alternates: {
-    canonical: "https://assetscraft.com",
+    canonical: "https://assetscraft.org",
   },
     generator: 'v0.dev'
 }
@@ -79,9 +79,9 @@ export default function RootLayout({
               name: "Assets Craft Financial Solution",
               description:
                 "Leading financial advisory firm in Kolkata offering expert investment planning, insurance solutions, loans, and tax services.",
-              url: "https://assetscraft.com",
-              logo: "https://assetscraft.com/images/assets-craft-logo.png",
-              image: "https://assetscraft.com/images/assets-craft-logo.png",
+              url: "https://assetscraft.org",
+              logo: "https://assetscraft.org/images/assets-craft-logo.png",
+              image: "https://assetscraft.org/images/assets-craft-logo.png",
               telephone: ["+91-98310-63235", "+91-94336-80719"],
               email: "info@assetscraft.com",
               address: {
@@ -144,6 +144,33 @@ export default function RootLayout({
                   },
                 ],
               },
+            }),
+          }}
+        />
+
+        {/* Organization Schema for Logo */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Assets Craft Financial Solution",
+              "url": "https://assetscraft.org",
+              "logo": "https://assetscraft.org/images/assets-craft-logo.png",
+              "sameAs": [
+                "https://www.facebook.com/profile.php?id=61578885141126",
+                "https://www.instagram.com/assetscraft",
+                "https://www.linkedin.com/in/dibyendu-dey-97064b376",
+                "https://x.com/assetscraft"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-98310-63235",
+                "contactType": "customer service",
+                "areaServed": "IN",
+                "availableLanguage": "English"
+              }
             }),
           }}
         />

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://assetscraft.org/sitemap.xml 
