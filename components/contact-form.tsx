@@ -63,7 +63,7 @@ export default function ContactForm() {
 
       {isSubmitted ? (
         <CardContent className="pt-6">
-          <div className="flex flex-col items-center justify-center text-center space-y-4">
+          <div className="flex flex-col items-center justify-center text-center space-y-4" aria-live="polite">
             <div className="h-12 w-12 rounded-full bg-rose-900/30 flex items-center justify-center">
               <CheckCircle className="h-6 w-6 text-rose-500" />
             </div>

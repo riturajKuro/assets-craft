@@ -42,6 +42,7 @@ export default function VideoTestimonials() {
                 preload="none"
                 className="rounded-lg w-full max-w-xs aspect-video mb-4 border-2 border-gray-800 shadow-md bg-black"
                 poster="/images/placeholder.jpg"
+                aria-label={`Testimonial video from ${t.name}, ${t.position}`}
               />
               <div className="mt-2">
                 <h3 className="text-lg font-semibold text-white mb-1">{t.name}</h3>
