@@ -90,6 +90,7 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 addressLocality: "Kolkata",
                 addressRegion: "West Bengal",
+                postalCode: "700001",
                 addressCountry: "IN",
               },
               geo: {
