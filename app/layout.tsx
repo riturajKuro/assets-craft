@@ -62,7 +62,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="theme-color" content="#f43f5e" />
         <link rel="icon" href="/images/assets-craft-logo.png" />
-        <link rel="icon" type="image/png" href="/images/assets-craft-logo.png" sizes="48x48" />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
         <link rel="apple-touch-icon" href="/images/assets-craft-logo.png" />
         <meta name="format-detection" content="telephone=yes" />
         <meta name="geo.region" content="IN-WB" />
